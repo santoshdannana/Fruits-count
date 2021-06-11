@@ -2,7 +2,8 @@ import Input from './Components/Input';
 import React,{useState} from 'react';
 import './App.css';
 import Display from './Components/Display';
-const oldData = [
+
+const oldData =[
   {
   id:1,
   name:"mango",
