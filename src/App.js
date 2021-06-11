@@ -1,7 +1,6 @@
 import Input from './Components/Input';
 import React,{useState} from 'react';
 import './App.css';
-import Data from './Components/Data';
 import Display from './Components/Display';
 const oldData = [
   {
@@ -40,17 +39,15 @@ function App() {
       <Input onSave={addToList}/>
         <div className="container">
         {
-        data.map( e =>
-        <Display 
-          onDelete={handleDelete}
-          key={e.id}
-          id={e.id}
-          name={e.name} 
-          count={e.count} />
-        )
+        data.map( e => <Display 
+            onDelete={handleDelete}
+            key={e.id}
+            id={e.id}
+            name={e.name} 
+            count={e.count} />
+          )
         }
         </div>
-      
     </div>
   );
 }
