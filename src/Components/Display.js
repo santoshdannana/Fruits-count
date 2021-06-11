@@ -1,7 +1,7 @@
 import React from 'react';
 import './Display.css';
 
-function Display(props) {
+function Display(props){
     return (
         <div className="box">
             <div className="first">
