@@ -11,7 +11,6 @@ function Data(props) {
             onDelete={props.handleDelete}
             data={props.items}
             key={e.id}
-            
             id={e.id}
             name={e.name} 
             count={e.count} />

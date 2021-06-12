@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <Input  onSave={addToList}/>
+      <Input onSave={addToList}/>
       <Data handleDelete={DeleteItem} items={data}/>  
     </div>
   );
