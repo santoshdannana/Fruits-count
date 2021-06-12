@@ -8,7 +8,7 @@ function Display(props){
                 <div className="name" >{props.name}</div>
                 <div className="count">{props.count}</div>
             </div>
-            <button className="button" 
+            <button className="delete" 
                 onClick={() => props.onDelete(props.id)}
                 type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash-fill" viewBox="0 0 16 16">

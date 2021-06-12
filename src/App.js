@@ -4,21 +4,7 @@ import './App.css';
 import Data from './Components/Data';
 
 const oldData =[
-  {
-  id:1,
-  name:"mango",
-  count:10,
-  },
-  {
-    id:2,
-    name:"apple",
-    count:10,
-  },
-  {
-      id:3,
-      name:"strawberry",
-      count:10,
-  }
+  
 ];
 function App() {
   const [data, setData] =useState(oldData);
@@ -31,7 +17,7 @@ function App() {
   }
   
   const DeleteItem =(id) =>{
-      const newItems = data.filter(i =>i.id !== id);
+      const newItems = data.filter(i => i.id !== id);
       setData(newItems);
   }
   
