@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://santoshkumar2001.github.io/Fruits-count/",
+  "homepage": "https://santoshkumar2001.github.io/Fruits-count",
   "name": "fruits",
   "version": "0.1.0",
   "private": true,
@@ -11,12 +11,12 @@
     "jquery": "^3.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^1.1.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
