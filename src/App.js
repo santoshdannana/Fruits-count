@@ -1,7 +1,7 @@
 import Input from './Components/Input';
 import React,{useState} from 'react';
 import './App.css';
-import Display from './Components/Display';
+import Data from './Components/Data';
 
 const oldData =[
   {
@@ -20,7 +20,7 @@ const oldData =[
       count:10,
   }
 ];
-function App() {
+function App(props) {
   const [data, setData] =useState(oldData);
 
   const addToList = (e) =>{
@@ -28,27 +28,18 @@ function App() {
       return [e,
          ...prevData];
     });
-    console.log(data);
   }
-  const handleDelete =(id) =>{
+  
+  const DeleteItem =(id) =>{
       const newItems = data.filter(i =>i.id !== id);
       setData(newItems);
   }
+  
 
   return (
     <div className="App">
-      <Input onSave={addToList}/>
-        <div className="container">
-        {
-        data.map( e => <Display 
-            onDelete={handleDelete}
-            key={e.id}
-            id={e.id}
-            name={e.name} 
-            count={e.count} />
-          )
-        }
-        </div>
+      <Input  onSave={addToList}/>
+      <Data handleDelete={DeleteItem} items={data}/>  
     </div>
   );
 }
