@@ -20,7 +20,7 @@ const oldData =[
       count:10,
   }
 ];
-function App(props) {
+function App() {
   const [data, setData] =useState(oldData);
 
   const addToList = (e) =>{
